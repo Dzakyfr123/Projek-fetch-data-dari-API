@@ -8,7 +8,7 @@ const hitAPI = async (url) => {
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
-    let data = await hitAPI(url); // ✅ No .data — the API directly returns the array
+    let data = await hitAPI(url); 
 
     let text = '<ul class="population">';
     data.forEach(element => {
